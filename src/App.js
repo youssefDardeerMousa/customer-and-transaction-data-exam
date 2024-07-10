@@ -4,6 +4,7 @@ import axios from 'axios';
 import CustomerTable from './Customer/CustomerTable.jsx';
 import TransactionGraph from './Customer/TransactionGraph.jsx';
 import { Helmet } from 'react-helmet';
+
 const App = () => {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
 
@@ -24,11 +25,11 @@ const App = () => {
   return (
     <Router basename="/customer-and-transaction-data-exam">
       <div className="container">
-      <Helmet>
-                <meta charSet="utf-8" />
-                <title>customer and transaction data</title>
-                <meta name="description" content="create an application that retrieves the customer and transaction data from a provided API endpoint and displays it in a user-friendly format. "></meta>
-            </Helmet>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>CustomerData</title>
+          <meta name="description" content="Create an application that retrieves the customer and transaction data from a provided API endpoint and displays it in a user-friendly format." />
+        </Helmet>
         <h1 className="text-center my-4">Customer Transactions</h1>
         <Routes>
           <Route
@@ -40,7 +41,7 @@ const App = () => {
               </>
             }
           />
-         </Routes>
+        </Routes>
       </div>
     </Router>
   );
