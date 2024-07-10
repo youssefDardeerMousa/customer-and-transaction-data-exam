@@ -16,6 +16,7 @@ This project is a simple dashboard application that retrieves customer and trans
 - Axios
 - Recharts
 - Bootstrap
+- react-helmet
 
 ## Installation
 
