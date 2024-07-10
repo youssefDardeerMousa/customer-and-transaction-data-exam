@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
- 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import CustomerTable from './Customer/CustomerTable.jsx';
 import TransactionGraph from './Customer/TransactionGraph.jsx';
-
+import { Helmet } from 'react-helmet';
 const App = () => {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
 
@@ -22,11 +22,27 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className="text-center my-4">Customer Transactions</h1>
-      <CustomerTable setSelectedCustomer={setSelectedCustomer} />
-      {selectedCustomer && <TransactionGraph selectedCustomer={selectedCustomer} />}
-    </div>
+    <Router basename="/customer-and-transaction-data-exam">
+      <div className="container">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>customer and transaction data</title>
+                <meta name="description" content="create an application that retrieves the customer and transaction data from a provided API endpoint and displays it in a user-friendly format. "></meta>
+            </Helmet>
+        <h1 className="text-center my-4">Customer Transactions</h1>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <CustomerTable setSelectedCustomer={setSelectedCustomer} />
+                {selectedCustomer && <TransactionGraph selectedCustomer={selectedCustomer} />}
+              </>
+            }
+          />
+         </Routes>
+      </div>
+    </Router>
   );
 };
 
