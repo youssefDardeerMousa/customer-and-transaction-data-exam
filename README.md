@@ -38,8 +38,6 @@ This project is a simple dashboard application that retrieves customer and trans
    npm start
 
 
-## Open your browser and go to \`http://localhost:3000\` to view the application.
-
 ## Data Source (JSON)
 
 The customer and transaction data is hosted on GitHub Pages:
