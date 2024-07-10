@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/customer-and-transaction-data-exam/static/css/main.ff02f4b5.css",
-    "main.js": "/customer-and-transaction-data-exam/static/js/main.447f6b64.js",
+    "main.js": "/customer-and-transaction-data-exam/static/js/main.08e3d0ce.js",
     "index.html": "/customer-and-transaction-data-exam/index.html",
     "main.ff02f4b5.css.map": "/customer-and-transaction-data-exam/static/css/main.ff02f4b5.css.map",
-    "main.447f6b64.js.map": "/customer-and-transaction-data-exam/static/js/main.447f6b64.js.map"
+    "main.08e3d0ce.js.map": "/customer-and-transaction-data-exam/static/js/main.08e3d0ce.js.map"
   },
   "entrypoints": [
     "static/css/main.ff02f4b5.css",
-    "static/js/main.447f6b64.js"
+    "static/js/main.08e3d0ce.js"
   ]
 }
