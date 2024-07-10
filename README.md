@@ -20,31 +20,28 @@ This project is a simple dashboard application that retrieves customer and trans
 ## Installation
 
 1. Clone the repository: 
-
-   ```bash
   [ git clone https://github.com/YOUR_USERNAME/customer-transactions-dashboard.git](https://github.com/youssefDardeerMousa/customer-and-transaction-data-exam.git)
 
-  2. Navigate to the project directory:
+  ## Navigate to the project directory:
 
-   \`\`\`bash
    cd customer-transactions-dashboard
-   \`\`\`
+ 
 
-3. Install the dependencies:
+## Install the dependencies:
 
-   \`\`\`bash
+   
    npm install
-   \`\`\`
+  
 
-4. Run the application:
+## Run the application:
 
-   \`\`\`bash
+  
    npm start
-   \`\`\`
 
-5. Open your browser and go to \`http://localhost:3000\` to view the application.
 
-## Data Source
+## Open your browser and go to \`http://localhost:3000\` to view the application.
+
+## Data Source (JSON)
 
 The customer and transaction data is hosted on GitHub Pages:
 
@@ -53,12 +50,6 @@ The customer and transaction data is hosted on GitHub Pages:
 
 ## Deployment
 
-The project is deployed using GitHub Pages. You can view the live application [here](https://YOUR_USERNAME.github.io/customer-transactions-dashboard).
+The project is deployed using GitHub Pages. You can view the live application [here](https://youssefdardeermousa.github.io/customer-and-transaction-data-exam/).
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details." > README.md
-
-git add README.md
-git commit -m "Add README.md"
-git push origin main
