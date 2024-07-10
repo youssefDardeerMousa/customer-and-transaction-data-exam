@@ -20,12 +20,9 @@ This project is a simple dashboard application that retrieves customer and trans
 ## Installation
 
 1. Clone the repository: 
-  [ git clone https://github.com/YOUR_USERNAME/customer-transactions-dashboard.git](https://github.com/youssefDardeerMousa/customer-and-transaction-data-exam.git)
+  [Click here](https://github.com/youssefDardeerMousa/customer-and-transaction-data-exam.git)
 
-  ## Navigate to the project directory:
 
-   cd customer-transactions-dashboard
- 
 
 ## Install the dependencies:
 
