@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff02f4b5.css",
-    "main.js": "/static/js/main.aaf00d4a.js",
-    "index.html": "/index.html",
-    "main.ff02f4b5.css.map": "/static/css/main.ff02f4b5.css.map",
-    "main.aaf00d4a.js.map": "/static/js/main.aaf00d4a.js.map"
+    "main.css": "/customer-and-transaction-data-exam/static/css/main.ff02f4b5.css",
+    "main.js": "/customer-and-transaction-data-exam/static/js/main.447f6b64.js",
+    "index.html": "/customer-and-transaction-data-exam/index.html",
+    "main.ff02f4b5.css.map": "/customer-and-transaction-data-exam/static/css/main.ff02f4b5.css.map",
+    "main.447f6b64.js.map": "/customer-and-transaction-data-exam/static/js/main.447f6b64.js.map"
   },
   "entrypoints": [
     "static/css/main.ff02f4b5.css",
-    "static/js/main.aaf00d4a.js"
+    "static/js/main.447f6b64.js"
   ]
 }
