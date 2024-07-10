@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+ 
+import axios from 'axios';
+import CustomerTable from './Customer/CustomerTable.jsx';
+import TransactionGraph from './Customer/TransactionGraph.jsx';
 
-function App() {
+const App = () => {
+  const [selectedCustomer, setSelectedCustomer] = useState(null);
+
+  useEffect(() => {
+    const fetchCustomers = async () => {
+      try {
+        const response = await axios.get('https://youssefdardeermousa.github.io/customer-data/customer.json');
+        if (response.data.customers && response.data.customers.length > 0) {
+          setSelectedCustomer(response.data.customers[0]);
+        }
+      } catch (error) {
+        console.error("Error fetching customers", error);
+      }
+    };
+    fetchCustomers();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="text-center my-4">Customer Transactions</h1>
+      <CustomerTable setSelectedCustomer={setSelectedCustomer} />
+      {selectedCustomer && <TransactionGraph selectedCustomer={selectedCustomer} />}
     </div>
   );
-}
+};
 
 export default App;
