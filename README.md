@@ -17,6 +17,7 @@ This project is a simple dashboard application that retrieves customer and trans
 - Recharts
 - Bootstrap
 - react-helmet
+- react-router-dom
 
 ## Installation
 
